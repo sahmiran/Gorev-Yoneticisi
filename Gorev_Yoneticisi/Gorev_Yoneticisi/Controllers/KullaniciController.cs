@@ -1,6 +1,7 @@
 ﻿using Gorev_Yoneticisi.Services;
 using Gorev_Yoneticisi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,14 +18,14 @@ namespace Gorev_Yoneticisi.Controllers
             this.kullaniciService = kullaniciService;
         }
         // GET: api/<KullaniciController>
-        [HttpGet]
+        [HttpGet("Kullanicilari Listele"),AllowAnonymous]
         public ActionResult<List<Kullanici>> Get()
         {
             return kullaniciService.Get();
         }
 
         // GET api/<KullaniciController>/5
-        [HttpGet("{id}")]
+        [HttpGet("Kullanici Ara"),AllowAnonymous]
         public ActionResult<Kullanici> Get(string id)
         {
             var kullanici = kullaniciService.Get(id);
@@ -36,7 +37,7 @@ namespace Gorev_Yoneticisi.Controllers
         }
 
         // POST api/<KullaniciController>
-        [HttpPost]
+        [HttpPost("Kullanici Ekle"), Authorize]
         public ActionResult<Kullanici> Post([FromBody] Kullanici kullanici)
         {
             kullaniciService.Create(kullanici);
@@ -44,7 +45,7 @@ namespace Gorev_Yoneticisi.Controllers
         }
 
         // PUT api/<KullaniciController>/5
-        [HttpPut("{id}")]
+        [HttpPut("Kullanici Guncelle"), Authorize]
         public ActionResult Put(string id, [FromBody] Kullanici kullanici)
         {
             var existingKullanici = kullaniciService.Get(id);
@@ -59,7 +60,7 @@ namespace Gorev_Yoneticisi.Controllers
         }
 
         // DELETE api/<KullaniciController>/5
-        [HttpDelete("{id}")]
+        [HttpDelete("Kullanici Sil"), Authorize]
         public ActionResult Delete(string id)
         {
             var kullanici = kullaniciService.Get(id);
