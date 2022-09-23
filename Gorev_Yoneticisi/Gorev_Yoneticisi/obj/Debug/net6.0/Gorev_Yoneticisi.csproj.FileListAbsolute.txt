@@ -41,3 +41,8 @@ C:\Users\hasan\OneDrive\Masaüstü\PITON Protect\Gorev_Yoneticisi\Gorev_Yonetici
 C:\Users\hasan\OneDrive\Masaüstü\PITON Protect\Gorev_Yoneticisi\Gorev_Yoneticisi\obj\Debug\net6.0\Gorev_Yoneticisi.pdb
 C:\Users\hasan\OneDrive\Masaüstü\PITON Protect\Gorev_Yoneticisi\Gorev_Yoneticisi\obj\Debug\net6.0\Gorev_Yoneticisi.genruntimeconfig.cache
 C:\Users\hasan\OneDrive\Masaüstü\PITON Protect\Gorev_Yoneticisi\Gorev_Yoneticisi\obj\Debug\net6.0\ref\Gorev_Yoneticisi.dll
+C:\Users\hasan\OneDrive\Masaüstü\PITON Protect\Gorev_Yoneticisi\Gorev_Yoneticisi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\hasan\OneDrive\Masaüstü\PITON Protect\Gorev_Yoneticisi\Gorev_Yoneticisi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\hasan\OneDrive\Masaüstü\PITON Protect\Gorev_Yoneticisi\Gorev_Yoneticisi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\hasan\OneDrive\Masaüstü\PITON Protect\Gorev_Yoneticisi\Gorev_Yoneticisi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\hasan\OneDrive\Masaüstü\PITON Protect\Gorev_Yoneticisi\Gorev_Yoneticisi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
